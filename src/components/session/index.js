@@ -8,27 +8,38 @@ class Session extends React.Component {
     constructor(props, context) {
         super(props, context);
 
-        this.handleSelect = this.handleSelect.bind(this);
         this.state = {
             activeKey: '1'
         };
-    }
-
-    handleSelect(activeKey) {
-        this.setState({activeKey});
     }
 
     componentDidMount() {
         this.props.loadSessionItem();
     }
 
-    click() {
-        return this.props.sessionItem.map((el) => {
-            return console.log(el);
+    handleSelect = (activeKey) => {
+        this.setState({activeKey});
+    };
+
+    handleClick = () => (this.props.sessionItem.map((el) => {
+            console.log(el);
         })
-    }
+    );
+
+    renderSession = (array) => (array && array.map((el) => (
+            <Panel eventKey={el.id}>
+                <Panel.Heading>
+                    <Panel.Title toggle>{el.title}</Panel.Title>
+                </Panel.Heading>
+                <Panel.Body collapsible>Panel content 2
+                    <button onClick={this.handleClick}>Console.log</button>
+                </Panel.Body>
+            </Panel>
+        ))
+    );
 
     render() {
+
         return (
             <div>
                 <PanelGroup
@@ -37,59 +48,30 @@ class Session extends React.Component {
                     activeKey={this.state.activeKey}
                     onSelect={this.handleSelect}
                 >
-                    {setTimeout( function()  {
-                        this.props.sessionItem.map((el) => {
-                        return (<Panel eventKey={el.id}>
-                            {console.log(el)}
-                            <Panel.Heading>
-                                <Panel.Title toggle>{el.title}</Panel.Title>
-                            </Panel.Heading>
-                            <Panel.Body collapsible>Panel content 2
-                                <button onClick={() => this.click()}>Console.log</button>
-                            </Panel.Body>
-
-                        </Panel>)
-                    })}.bind(this), 1000)}
-
+                    {this.renderSession(this.props.sessionItem)}
 
                     <Panel eventKey="2">
                         <Panel.Heading>
                             <Panel.Title toggle>Panel heading 2</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>Panel content 2
-                            <button onClick={() => this.click()}>Console.log</button>
+                            <button onClick={this.handleClick}>Console.log</button>
                         </Panel.Body>
-
                     </Panel>
                     <Panel eventKey="3">
                         <Panel.Heading>
                             <Panel.Title toggle>Panel heading 2</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body collapsible>Panel content 2
-                            <button onClick={() => this.click()}>Console.log</button>
+                            <button onClick={this.handleClick}>Console.log</button>
                         </Panel.Body>
-
                     </Panel>
-
                 </PanelGroup>
             </div>
-        )
-
+        );
     }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state) => ({sessionItem: getSessionItem(state)});
 
-    return {sessionItem: getSessionItem(state)}
-
-};
-
-
-export default connect(
-    mapStateToProps,
-    {
-        loadSessionItem
-    }
-)(Session);
-
-
+export default connect(mapStateToProps, {loadSessionItem})(Session);
