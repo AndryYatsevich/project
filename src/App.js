@@ -25,12 +25,8 @@ class App extends Component {
                 </div>
                 <Grid>
                     <Row>
-                        <Col xs={4}>
-                            <div>Список сессий</div>
+                        <Col xs={12}>
                             <div><Session/></div>
-                        </Col>
-                        <Col xs={8}>
-                            <div> Инфа по сессиям</div>
                         </Col>
                     </Row>
                 </Grid>
