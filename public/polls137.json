@@ -1,0 +1,32 @@
+[
+  {
+    "id": 201,
+    "title": "Новое выступление",
+    "order": 1,
+    "pollNumber": 1,
+    "voteCount": 2,
+    "commentsCount": 2,
+    "durationMinutes": 60,
+    "startTime": 1508924400000,
+    "sessionId": 137,
+    "active": false,
+    "speaker": "",
+    "myRating": 0,
+    "attachmentId": 7,
+    "type": "RATE1TO5",
+    "averageRating": 3.0
+  },
+  {
+    "id": 225,
+    "title": "Новое выступление",
+    "order": 2,
+    "pollNumber": 2,
+    "voteCount": 0,
+    "commentsCount": 0,
+    "startTime": 1508928000000,
+    "sessionId": 137,
+    "active": false,
+    "myRating": 0,
+    "type": "RATE1TO5"
+  }
+]

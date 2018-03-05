@@ -1,3 +1,4 @@
 export default {
     LOAD_SESSION_ITEM: 'LOAD_SESSION_ITEM',
+    LOAD_POLLS_ITEM: 'LOAD_POOLS_ITEM'
 };

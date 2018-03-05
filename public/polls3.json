@@ -1,0 +1,243 @@
+[
+  {
+    "id": 11,
+    "title": "",
+    "order": 1,
+    "pollNumber": 1,
+    "voteCount": 6,
+    "commentsCount": 91,
+    "durationMinutes": 10,
+    "startTime": 1503311400000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "",
+    "myRating": 0,
+    "type": "GOOD_BAD",
+    "averageRating": 1.0
+  },
+  {
+    "id": 5,
+    "title": "DemoVoter - новые фичи",
+    "order": 2,
+    "pollNumber": 2,
+    "voteCount": 5,
+    "commentsCount": 6,
+    "durationMinutes": 20,
+    "startTime": 1503312000000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Иванов",
+    "myRating": 0,
+    "attachmentId": 5,
+    "type": "RATE1TO5",
+    "averageRating": 4.4
+  },
+  {
+    "id": 9,
+    "title": "Roadmap",
+    "order": 3,
+    "pollNumber": 3,
+    "voteCount": 4,
+    "commentsCount": 15,
+    "durationMinutes": 20,
+    "startTime": 1503313200000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Петров",
+    "myRating": 0,
+    "type": "RATE1TO5",
+    "averageRating": 3.0
+  },
+  {
+    "id": 13,
+    "title": "Интернет банк",
+    "order": 4,
+    "pollNumber": 4,
+    "voteCount": 4,
+    "commentsCount": 2,
+    "startTime": 1503314400000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Ivanoff",
+    "myRating": 0,
+    "type": "RATE1TO5",
+    "averageRating": 4.25
+  },
+  {
+    "id": 8,
+    "title": "ХорошоПлохо",
+    "order": 5,
+    "pollNumber": 5,
+    "voteCount": 8,
+    "commentsCount": 38,
+    "durationMinutes": 2,
+    "startTime": 1503314400000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "ХорошоПлохо2",
+    "myRating": 0,
+    "type": "GOOD_BAD",
+    "averageRating": 0.625
+  },
+  {
+    "id": 10,
+    "title": "Кто вкуснее?",
+    "order": 6,
+    "pollNumber": 6,
+    "voteCount": 9,
+    "commentsCount": 23,
+    "startTime": 1503314520000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Иваныч",
+    "myRating": 0,
+    "type": "OPTIONS",
+    "options": [
+      "Коровка",
+      "Лошадка",
+      "Собачка",
+      "Хрюшка",
+      "Я - вегетарианец"
+    ],
+    "voteTotals": [
+      {
+        "index": 1,
+        "label": "Коровка",
+        "value": 1
+      },
+      {
+        "index": 2,
+        "label": "Лошадка",
+        "value": 1
+      },
+      {
+        "index": 3,
+        "label": "Собачка",
+        "value": 4
+      },
+      {
+        "index": 4,
+        "label": "Хрюшка",
+        "value": 1
+      },
+      {
+        "index": 5,
+        "label": "Я - вегетарианец",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Кто умнее?",
+    "order": 7,
+    "pollNumber": 7,
+    "voteCount": 7,
+    "commentsCount": 6,
+    "startTime": 1503314520000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Петрович",
+    "myRating": 0,
+    "type": "OPTIONS",
+    "options": [
+      "Кошечка",
+      "Лисичка",
+      "Медвежонок",
+      "Скворчонок",
+      "Воробушек",
+      "Волченок"
+    ],
+    "voteTotals": [
+      {
+        "index": 1,
+        "label": "Кошечка",
+        "value": 1
+      },
+      {
+        "index": 2,
+        "label": "Лисичка",
+        "value": 1
+      },
+      {
+        "index": 3,
+        "label": "Медвежонок",
+        "value": 1
+      },
+      {
+        "index": 4,
+        "label": "Скворчонок",
+        "value": 1
+      },
+      {
+        "index": 5,
+        "label": "Воробушек",
+        "value": 2
+      },
+      {
+        "index": 6,
+        "label": "Волченок",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Тратата ",
+    "order": 8,
+    "pollNumber": 8,
+    "voteCount": 1,
+    "commentsCount": 1,
+    "durationMinutes": 100,
+    "startTime": 1503314520000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Денис",
+    "myRating": 0,
+    "type": "RATE1TO5",
+    "averageRating": 1.0
+  },
+  {
+    "id": 211,
+    "title": "",
+    "order": 9,
+    "pollNumber": 9,
+    "voteCount": 2,
+    "commentsCount": 6,
+    "durationMinutes": 14,
+    "startTime": 1503320520000,
+    "sessionId": 3,
+    "active": false,
+    "speaker": "Василий",
+    "myRating": 0,
+    "type": "OPTIONS",
+    "options": [
+      "Акула",
+      "Мишка",
+      "Белый мишка",
+      "Богомол"
+    ],
+    "voteTotals": [
+      {
+        "index": 1,
+        "label": "Акула",
+        "value": 1
+      },
+      {
+        "index": 2,
+        "label": "Мишка",
+        "value": 1
+      },
+      {
+        "index": 3,
+        "label": "Белый мишка",
+        "value": 0
+      },
+      {
+        "index": 4,
+        "label": "Богомол",
+        "value": 0
+      }
+    ]
+  }
+]

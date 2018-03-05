@@ -1,0 +1,173 @@
+[
+  {
+    "id": 226,
+    "title": "Интернет банк",
+    "order": 1,
+    "pollNumber": 1,
+    "voteCount": 13,
+    "commentsCount": 68,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "speaker": "Денис",
+    "myRating": 0,
+    "type": "OPTIONS",
+    "options": [
+      "все переделать",
+      "огонь",
+      "так себе"
+    ],
+    "voteTotals": [
+      {
+        "index": 1,
+        "label": "все переделать",
+        "value": 1
+      },
+      {
+        "index": 2,
+        "label": "огонь",
+        "value": 5
+      },
+      {
+        "index": 3,
+        "label": "так себе",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "title": "Хорошо ли быть разработчиком?",
+    "order": 2,
+    "pollNumber": 2,
+    "voteCount": 9,
+    "commentsCount": 63,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "speaker": "Владимир",
+    "myRating": 0,
+    "type": "RATE1TO5",
+    "averageRating": 3.3333
+  },
+  {
+    "id": 228,
+    "title": "Как сильно вы любите тёмные темки?",
+    "order": 3,
+    "pollNumber": 3,
+    "voteCount": 10,
+    "commentsCount": 135,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "speaker": "Филипп",
+    "myRating": 0,
+    "type": "OPTIONS",
+    "options": [
+      "очень сильно",
+      "сильно!",
+      "не могу жить без тёмных темок!",
+      "тёмные темки - пожалуй лучшее изобритение человечества",
+      "Не люблю тёмные темки"
+    ],
+    "voteTotals": [
+      {
+        "index": 1,
+        "label": "очень сильно",
+        "value": 3
+      },
+      {
+        "index": 2,
+        "label": "сильно!",
+        "value": 1
+      },
+      {
+        "index": 3,
+        "label": "не могу жить без тёмных темок!",
+        "value": 0
+      },
+      {
+        "index": 4,
+        "label": "тёмные темки - пожалуй лучшее изобритение человечества",
+        "value": 0
+      },
+      {
+        "index": 5,
+        "label": "Не люблю тёмные темки",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "title": "Новое выступление",
+    "order": 4,
+    "pollNumber": 4,
+    "voteCount": 6,
+    "commentsCount": 6,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "myRating": 0,
+    "type": "RATE1TO5",
+    "averageRating": 3.3333
+  },
+  {
+    "id": 231,
+    "title": "Вай!",
+    "order": 5,
+    "pollNumber": 5,
+    "voteCount": 8,
+    "commentsCount": 14,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "speaker": "Каха",
+    "myRating": 0,
+    "type": "GOOD_BAD",
+    "averageRating": 0.75
+  },
+  {
+    "id": 232,
+    "title": "Новое выступление",
+    "order": 6,
+    "pollNumber": 6,
+    "voteCount": 5,
+    "commentsCount": 7,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "speaker": "",
+    "myRating": 0,
+    "type": "GOOD_BAD",
+    "averageRating": 1.0
+  },
+  {
+    "id": 233,
+    "title": "Новое выступление",
+    "order": 7,
+    "pollNumber": 7,
+    "voteCount": 6,
+    "commentsCount": 19,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "speaker": "",
+    "myRating": 0,
+    "type": "RATE1TO5",
+    "averageRating": 4.1667
+  },
+  {
+    "id": 235,
+    "title": "Новое выступление",
+    "order": 8,
+    "pollNumber": 8,
+    "voteCount": 0,
+    "commentsCount": 0,
+    "startTime": 1517996120000,
+    "sessionId": 151,
+    "active": false,
+    "myRating": 0,
+    "type": "RATE1TO5"
+  }
+]

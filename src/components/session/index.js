@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {getSessionItem} from './selectors';
-import {loadSessionItem} from './action';
+import {getPollsItem, getSessionItem} from './selectors';
+import {loadSessionItem, loadPollsItem} from './action';
 import {PanelGroup, Panel} from 'react-bootstrap';
 
 class Session extends React.Component {
@@ -19,24 +19,27 @@ class Session extends React.Component {
 
     handleSelect = (activeKey) => {
         this.setState({activeKey});
-    };
+        if(activeKey){
+            this.props.loadPollsItem(activeKey);
 
-    handleClick = () => (this.props.sessionItem.map((el) => {
-            console.log(el);
-        })
-    );
+        }
+
+    };
 
     renderSession = (array) => (array && array.map((el) => (
             <Panel eventKey={el.id}>
                 <Panel.Heading>
                     <Panel.Title toggle>{el.title}</Panel.Title>
                 </Panel.Heading>
-                <Panel.Body collapsible>Panel content 2
-                    <button onClick={this.handleClick}>Console.log</button>
-                </Panel.Body>
+                {this.renderPolls(this.props.pollsItem)}
             </Panel>
         ))
     );
+
+    renderPolls = (array) => (array && array.map((el) => (
+        <Panel.Body collapsible>{el.title}
+        </Panel.Body>
+    )));
 
     render() {
 
@@ -50,28 +53,16 @@ class Session extends React.Component {
                 >
                     {this.renderSession(this.props.sessionItem)}
 
-                    <Panel eventKey="2">
-                        <Panel.Heading>
-                            <Panel.Title toggle>Panel heading 2</Panel.Title>
-                        </Panel.Heading>
-                        <Panel.Body collapsible>Panel content 2
-                            <button onClick={this.handleClick}>Console.log</button>
-                        </Panel.Body>
-                    </Panel>
-                    <Panel eventKey="3">
-                        <Panel.Heading>
-                            <Panel.Title toggle>Panel heading 2</Panel.Title>
-                        </Panel.Heading>
-                        <Panel.Body collapsible>Panel content 2
-                            <button onClick={this.handleClick}>Console.log</button>
-                        </Panel.Body>
-                    </Panel>
+
                 </PanelGroup>
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => ({sessionItem: getSessionItem(state)});
+const mapStateToProps = (state) => ({
+    sessionItem: getSessionItem(state),
+    pollsItem: getPollsItem(state)
+});
 
-export default connect(mapStateToProps, {loadSessionItem})(Session);
+export default connect(mapStateToProps, {loadSessionItem, loadPollsItem})(Session);
